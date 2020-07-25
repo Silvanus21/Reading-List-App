@@ -1,9 +1,9 @@
 import React, { useState, useContext } from 'react';
-import { BookContext } from "../contexts/BookContext"
+import { BookContext } from "../contexts/BookContext.jsx"
 
 const BookForm = () => {
 
-    const { addBook } = useContext(BookContext)
+    const { dispatch } = useContext(BookContext)
     const [title, setTitle] = useState("")
     const [author, setAuthor] = useState("")
 
@@ -12,7 +12,8 @@ const BookForm = () => {
             event.preventDefault()
 
             if(title.trim() !== "" || author.trim() !== "") {
-                addBook(title, author)
+                dispatch({type : "ADD_BOOK", book : { title, author }})
+
                 setTitle("")
                 setAuthor("")
             }

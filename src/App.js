@@ -1,9 +1,9 @@
 import React from 'react';
-import Navbar from "./components/Navbar"
-import BooksList from './components/BooksList';
-import BookForm from "./components/BookForm"
+import Navbar from "./components/Navbar.jsx"
+import BooksList from './components/BooksList.jsx';
+import BookForm from "./components/BookForm.jsx"
 //Context Providers...
-import BookContextProvider from "./contexts/BookContext"
+import BookContextProvider from "./contexts/BookContext.jsx"
 
 function App() {
   return (

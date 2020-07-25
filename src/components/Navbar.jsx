@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { BookContext } from "../contexts/BookContext"
+import { BookContext } from "../contexts/BookContext.jsx"
 
 const Navbar = () => {
 
