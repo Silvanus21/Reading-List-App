@@ -117,3 +117,8 @@ input[type="text"]:focus {
   transform: scale(0.95);
   outline: none;
 }
+
+.swal-title{
+  color: #553055;
+  margin-bottom: 40px;
+}

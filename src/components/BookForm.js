@@ -1,5 +1,6 @@
 import React, { useState, useContext } from 'react';
 import { BookContext } from "../contexts/BookContext"
+import swal from "@sweetalert/with-react"
 
 const BookForm = () => {
 
@@ -14,8 +15,12 @@ const BookForm = () => {
             if(title.trim() !== "" || author.trim() !== "") {
                 dispatch({type : "ADD_BOOK", book : { title, author }})
 
+                swal("Book added to reading list.","","success", {buttons: false, timer: 3000})
                 setTitle("")
                 setAuthor("")
+            }
+            else{
+                swal("Enter book title and author name!","","error", {buttons: false, timer: 4000})
             }
         }}>
             <input
