@@ -1,7 +1,6 @@
-## Reading List App
-========================
+# Reading List App
 
-## Available Scripts
+### Available Scripts
 
 In the project directory, you can run:
 
